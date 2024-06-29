@@ -1,4 +1,4 @@
-name: "Label new pull requests"
+name: "Label new pull requests cpy"
 description: "Add a label when a new PR is opened"
 author: "Sanujan"
 
@@ -14,6 +14,6 @@ runs:
   using: "node16"
   main: "dist/index.js"
 
-brandings:
+branding:
   icon: 'activity'
   color: 'green'
