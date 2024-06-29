@@ -1,0 +1,11 @@
+name: "Hello"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubunthu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
