@@ -23,4 +23,6 @@ export async function run() {
     }
 }
 
-run();
+if (!process.env.JEST_WORKER_ID){
+    run();
+}
