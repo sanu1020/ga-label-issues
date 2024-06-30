@@ -3,7 +3,7 @@ name: Echo GitHub Context
 on:
   push:
     branches:
-      - main  
+      - master  
       
 jobs:
   echo_context:
