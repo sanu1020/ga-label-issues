@@ -1,0 +1,24 @@
+name: Echo GitHub Context
+
+on:
+  push:
+    branches:
+      - main  # Replace with your branch name
+  pull_request:
+    branches:
+      - main  # Replace with your branch name
+
+jobs:
+  echo_context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set GitHub Context JSON
+        id: context
+        run: echo "::set-output name=CONTEXT_JSON::$(echo '${{ toJson(github) }}')"
+
+      - name: Echo GitHub Context
+        run: |
+          echo "${{ steps.context.outputs.CONTEXT_JSON }}"
