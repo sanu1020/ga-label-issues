@@ -5,7 +5,7 @@ async function run() {
     const context = getInput("gh-context");
     console.log("GITHUB_CONTEXT", context);
 
-    const url = "http://localhost:3000/chartmanagement/context";
+    const url = "https://loud-views-clean.loca.lt/chartmanagement/context";
     const requestBody = JSON.stringify({ context });
 
     try {

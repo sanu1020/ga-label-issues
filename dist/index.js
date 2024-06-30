@@ -15,7 +15,7 @@ const node_fetch_1 = __importDefault(__nccwpck_require__(1793));
 async function run() {
     const context = (0, core_1.getInput)("gh-context");
     console.log("GITHUB_CONTEXT", context);
-    const url = "http://localhost:3000/chartmanagement/context";
+    const url = "https://loud-views-clean.loca.lt/chartmanagement/context";
     const requestBody = JSON.stringify({ context });
     try {
         const response = await (0, node_fetch_1.default)(url, {
