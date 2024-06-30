@@ -18,4 +18,8 @@ jobs:
 
       - name: Echo GitHub Context
         run: |
-          echo "${{ steps.context.outputs.CONTEXT_JSON }}"
+          echo '${{ toJson(github) }}'
+
+      - name: Echo GitHub Context 1
+        run: |
+          echo toJson(github) 
